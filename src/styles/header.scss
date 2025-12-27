@@ -1,0 +1,23 @@
+.header {
+  height: 100vh;
+  padding: $padding-top-bar $padding-side-top-bar 40px;
+  background-image: url(../images/back.svg);
+  background-size: cover;
+  background-position: center;
+
+  box-sizing: border-box;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__titel {
+    font-size: $font-size-large;
+    font-weight: $font-weigth-bold;
+    color: $font-color-header-title;
+    line-height: 100%;
+  }
+}

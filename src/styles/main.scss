@@ -1,3 +1,28 @@
-body {
-  margin: 0;
+@import 'variables';
+@import 'menu';
+@import 'header';
+@import 'icons';
+@import 'top-bar';
+@import 'navigation';
+
+.page {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $font-color;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    pointer-events: none;
+  }
 }
