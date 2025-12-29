@@ -7,6 +7,11 @@
   background-position: center;
   background-size: contain;
 
+  @include onTablet {
+    width: $size-icon-tablet;
+    height: $size-icon-tablet;
+  }
+
   &--phone {
     background-image: url('../images/Phone-number.svg');
   }

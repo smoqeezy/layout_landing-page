@@ -1,0 +1,23 @@
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @include onTablet{
+    height: 400px;
+  }
+
+  @include onDesktop {
+    height: 460px;
+  }
+}
