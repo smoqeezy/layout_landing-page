@@ -36,4 +36,8 @@
     opacity: 0;
     pointer-events: none;
   }
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 }

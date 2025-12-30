@@ -11,7 +11,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include contentPadding;
+    @include content-padding;
   }
 
   &__top {

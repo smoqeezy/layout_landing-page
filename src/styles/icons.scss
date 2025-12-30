@@ -7,7 +7,7 @@
   background-position: center;
   background-size: contain;
 
-  @include onTablet {
+  @include on-tablet {
     width: $size-icon-tablet;
     height: $size-icon-tablet;
   }
