@@ -14,6 +14,11 @@
 
   &__image {
     width: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   &__content__first {
