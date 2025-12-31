@@ -48,5 +48,9 @@
     &:active {
       background-color: #010810;
     }
+
+    @include on-desktop {
+      width: 324px;
+    }
   }
 }

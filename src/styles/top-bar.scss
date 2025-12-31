@@ -17,7 +17,41 @@
   }
 
   &__icons {
+    position: relative;
+    align-items: center;
+    overflow: hidden;
     display: flex;
     gap: $gap-icon;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: $gap-icon;
+  }
+
+  &__phone-number {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+      max-width: 0;
+      overflow: hidden;
+      font-size: 12px;
+      font-weight: $font-weigth-bold;
+      letter-spacing: 2px;
+      white-space: nowrap;
+      transition:
+        max-width 0.6s ease-out,
+        margin-right 0.6s ease-out;
+      margin-right: 0;
+    }
+  }
+
+  @include on-tablet {
+    &__phone:hover &__phone-number {
+      max-width: 300px;
+      margin-right: 10px;
+    }
   }
 }

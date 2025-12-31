@@ -9,10 +9,29 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     color: $font-color;
     font-size: $font-size-medium;
     line-height: $line-height-links;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      display: block;
+      background-color: $font-color;
+      height: 1px;
+      width: 100%;
+
+      transition: transform 0.3s;
+      transform: scale(0);
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
   }
 
   &__phone-number {
